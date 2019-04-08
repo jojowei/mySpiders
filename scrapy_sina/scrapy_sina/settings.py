@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for scrapy_douban project
+# Scrapy settings for scrapy_sina project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,24 +9,17 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'scrapy_douban'
+BOT_NAME = 'scrapy_sina'
 
-SPIDER_MODULES = ['scrapy_douban.spiders']
-NEWSPIDER_MODULE = 'scrapy_douban.spiders'
+SPIDER_MODULES = ['scrapy_sina.spiders']
+NEWSPIDER_MODULE = 'scrapy_sina.spiders'
 
-'''
 
-the two places has been changed: 
-	1) USER_AGENT =  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.54 Safari/536.5'
-	2) ROBOTSTXT_OBEY = False
-
-								~~Jojo Wei
-'''
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'scrapy_douban (+http://www.yourdomain.com)'
-USER_AGENT =  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.54 Safari/536.5'
+#USER_AGENT = 'scrapy_sina (+http://www.yourdomain.com)'
+
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -54,13 +47,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'scrapy_douban.middlewares.ScrapyDoubanSpiderMiddleware': 543,
+#    'scrapy_sina.middlewares.ScrapySinaSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'scrapy_douban.middlewares.ScrapyDoubanDownloaderMiddleware': 543,
+#    'scrapy_sina.middlewares.ScrapySinaDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -72,7 +65,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'scrapy_douban.pipelines.ScrapyDoubanPipeline': 300,
+#    'scrapy_sina.pipelines.ScrapySinaPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

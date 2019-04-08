@@ -2,7 +2,7 @@
     Author：Jojo Wei
     Date： 03/04/2019
     Function：To get the info of new movies in Shenzhen posted on Douban
-    Version：10.0
+    Version：1.0
 '''
 
 import scrapy
